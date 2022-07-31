@@ -110,10 +110,10 @@ const PostList = () => {
         {form === true && (
           <ClickAwayListener onClickAway={handleClick}>
             <form
-              className={styles.postlist__add__event__from}
+              className={styles.postlist__add__event__form}
               onSubmit={(event) => addEvent(event)}
             >
-              <div className={styles.postlist__add__event__from__box}>
+              <div className={styles.postlist__add__event__form__box}>
                 <h2 className="title is-4">Event Form</h2>
                 <button className="p-2 button is-danger is-outlined" onClick={()=> setForm(false)}>
                   <CloseIcon />
