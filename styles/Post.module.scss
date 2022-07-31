@@ -1,0 +1,148 @@
+@import "./variables.scss";
+
+.post {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: $postWidth;
+  height: $postHeight;
+  background-color: rgb(214, 212, 212);
+  border-radius: 10px;
+  padding: 13px 0;
+
+  &__edit {
+    width: $editWidth;
+    position: absolute;
+    top: 50vh;
+    display: flex;
+    background-color: azure;
+    padding: 10px;
+    border: 2px solid cyan;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    z-index: 6;
+
+    &__box {
+      width: $editWidth - 20;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    width: 130px;
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    transform: translateY(135px) translateX(-75px);
+    z-index: 6;
+
+    &__publish {
+      &__unactive {
+        display: none;
+      }
+    }
+
+    &__unpublish {
+      &__unactive {
+        display: none;
+      }
+    }
+  }
+
+  &__navigation {
+    &__box {
+      display: flex;
+      width: $postWidth - $postMinus;
+      height: 20px;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: end;
+      min-height: 20px;
+    }
+
+    &__menu {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      width: 30px;
+      height: 30px;
+      padding: 0;
+      font-size: 15px;
+      font-weight: 700;
+      outline: none;
+      border: none;
+      cursor: pointer;
+      background-color: rgb(214, 212, 212);
+    }
+
+    &__time {
+      height: 19px;
+      margin: 0;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+  }
+
+  &__title {
+    display: block;
+    margin: 0;
+    font-size: 18px;
+    width: $postWidth - $postMinus;
+    height: 84px;
+    font-weight: 600;
+    letter-spacing: 0em;
+    overflow: hidden;
+    text-align: left;
+    text-align: left;
+    text-overflow: ellipsis;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    &::-webkit-scrollbar {
+      width: 0px;
+      background: transparent;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .post {
+    margin: 20px;
+
+    &__title {
+      width: $postWidth - $postMinus;
+    }
+  }
+}
+
+@media (max-width: 600px) and (min-width: 100px) {
+  .post {
+    width: $width-mobile;
+
+    &__title {
+      width: $width-mobile - $postMinus;
+    }
+
+    &__form {
+      transform: translateY(150px) translateX(-115px);
+    }
+
+    &__navigation {
+      &__box {
+        width: $width-mobile - $postMinus;
+      }
+    }
+  }
+}

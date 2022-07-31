@@ -1,0 +1,236 @@
+@import "./variables.scss";
+
+.timezone {
+  width: 100%;
+  height: 109px;
+  gap: 20px;
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+
+  &__options {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: $widthSelect;
+    background-color: #fff;
+    z-index: 5;
+
+    &__unactive {
+      margin: 0;
+      padding: 0;
+      z-index: 5;
+    }
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  &__subtitle {
+    padding: 0 19px 0 15px;
+    height: 27px;
+    left: 857px;
+    top: 40px;
+
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+  }
+
+  &__select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding-left: 43px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: $widthSelect;
+    height: 44px;
+    left: 1063px;
+    appearance: none;
+    cursor: pointer;
+    top: 32px;
+    background: #ffffff;
+    border: 1.5px solid #000000;
+    border-radius: 5px;
+
+    &__unactive {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      padding-left: 43px;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 22px;
+      letter-spacing: 0em;
+      text-align: left;
+      width: $widthSelect;
+      height: 44px;
+      left: 1063px;
+      appearance: none;
+      pointer-events: none;
+      top: 32px;
+      background: #ffffff;
+      border: 1.5px solid #000000;
+      border-radius: 5px;
+    }
+
+    &__image {
+      pointer-events: none;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url(../public/arrow.png);
+      position: relative;
+      top: 28px;
+      left: 14px;
+      display: block;
+      width: 14px;
+      height: 7px;
+    }
+  }
+}
+
+.timezone__option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1.5px solid #000000;
+  border-top: none;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 44px;
+  visibility: visible;
+  opacity: 1;
+  background-color: #fff;
+  z-index: 5;
+
+  &__select {
+    pointer-events: none;
+    color: gray;
+  }
+
+  &__unactive {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1.5px solid #000000;
+    border-top: none;
+    border-radius: 5px;
+    pointer-events: none;
+    height: 44px;
+    width: $widthSelect;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 5;
+  }
+}
+
+.container {
+  display: flex;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  .timezone {
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    width: 450px;
+    height: 180px;
+
+    &__header {
+      text-align: center;
+      height: 40px;
+    }
+
+    &__box {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+      align-items: center;
+    }
+
+    &__options {
+      position: absolute;
+      margin: 0;
+      padding: 0;
+      width: $widthSelect;
+      visibility: visible;
+      opacity: 1;
+
+      &__unactive {
+        display: none;
+        margin: 0;
+        padding: 0;
+      }
+    }
+
+    &__option {
+      z-index: 5;
+    }
+  }
+}
+
+@media (max-width: 600px) and (min-width: 100px) {
+  .timezone {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 450px;
+    height: 180px;
+
+    &__box {
+      padding-bottom: 5px;
+    }
+
+    &__select {
+      width: $width-mobile;
+
+      &__unactive {
+        touch-action: none; 
+        width: $width-mobile;
+      }
+    }
+
+    &__header {
+      text-align: center;
+      height: 40px;
+    }
+
+    &__options {
+      position: absolute;
+      margin: 0;
+      padding: 0;
+      width: $widthSelect;
+
+      &__unactive {
+        display: none;
+        margin: 0;
+        padding: 0;
+        visibility: hidden;
+        opacity: 0;
+      }
+    }
+
+    &__option {
+      visibility: visible;
+      width: $width-mobile;
+      opacity: 1;
+      z-index: 5;
+    }
+  }
+}
