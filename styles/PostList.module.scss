@@ -40,7 +40,7 @@
       flex-direction: column;
       width: 300px;
       gap: 20px;
-      top: 50vh;
+      top: 200px;
       left: 50vw;
       transform: translate(-50% , -30%);
       justify-content: center;
@@ -251,7 +251,8 @@
       width: $width-mobile;
 
       &__form {
-        top: 200px;
+        position: fixed;
+        top: 300px;
       }
     }
 
