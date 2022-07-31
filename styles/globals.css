@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
 
-html,
-body {
+html {
   display: flex;
+  overflow-x:hidden;
   justify-content: center;
-  width: 100vw;
   padding: 0;
   margin: 0;
   font-family: 'Montserrat', sans-serif;
@@ -41,13 +40,6 @@ a {
   
   h1 {
     text-align: center;
-  }
-
-  html,
-  body {
-    display: flex;
-    width: 100vw;
-    justify-content: center;
   }
 
 }
