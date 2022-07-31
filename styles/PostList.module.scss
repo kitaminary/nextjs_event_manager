@@ -21,6 +21,7 @@
     height: 50px;
     gap: 20px;
     background-color: #4ade80;
+    z-index: 1;
 
     &::before {
       content: "";
@@ -39,7 +40,7 @@
       flex-direction: column;
       width: 300px;
       gap: 20px;
-      top: 90vh;
+      top: 95vh;
       left: 50vw;
       transform: translate(-50% , -30%);
       justify-content: center;
@@ -246,7 +247,7 @@
 
     &__add__event {
       position: fixed;
-      z-index: 10;
+      z-index: 4;
       top:  80vh;
       width: $width-mobile;
 
