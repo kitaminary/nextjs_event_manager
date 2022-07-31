@@ -1,5 +1,28 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+#  nextjs_event_manager
+[Demo](https://kitaminary.github.io/nextjs_event_manager/)
+
+## Start
+
+1. npm install
+2. npm run dev
+
+## Used
+1. NextJS version 12.2.3
+2. Node v14.19.3
+3. HTML
+4. SASS, SCSS
+5. JavaScript
+6. Adaptable crossbrowser project
+
+## Functionality
+1. Select timezone
+2. Add events
+2. Edit events
+
+
+
 ## Getting Started
 
 First, run the development server:
