@@ -14,8 +14,8 @@
 
   &__edit {
     width: $editWidth;
-    position: absolute;
-    top: 50vh;
+    position: relative;
+    top: -30px;
     display: flex;
     background-color: azure;
     padding: 10px;

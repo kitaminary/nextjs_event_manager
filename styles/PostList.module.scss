@@ -34,12 +34,12 @@
       background-image: url(../public/Vectorplus.png);
     }
 
-    &__from {
+    &__form {
       display: flex;
       flex-direction: column;
       width: 300px;
       gap: 20px;
-      top: 30%;
+      top: 90vh;
       left: 50vw;
       transform: translate(-50% , -30%);
       justify-content: center;
@@ -48,7 +48,7 @@
       padding: 30px;
       border-radius: 25px;
       background-color: rgb(239, 241, 228);
-      position: fixed;
+      position: sticky;
       z-index: 5;
 
       &__box {
