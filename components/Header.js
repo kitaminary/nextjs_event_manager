@@ -67,7 +67,7 @@ export const Header = () => {
                       setTimeZone(timezone);
                       setActiveSelect(!activeSelect);
                     }}
-                    onMouseEnter={() => {
+                    onMouseDown={() => {
                       setTimezone(timezone.value);
                       setTimeZone(timezone);
                       setActiveSelect(!activeSelect);
