@@ -1,7 +1,7 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 #  nextjs_event_manager
-[Demo](https://kitaminary.github.io/nextjs_event_manager/)
+[Demo](https://nextjs-event-manager.vercel.app/)
 
 ## Start
 
