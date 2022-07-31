@@ -62,11 +62,6 @@ export const Header = () => {
                         activeSelect === false,
                       [styles.timezone__option__select]: timeZone === timezone,
                     })}
-                    onTouchStart={() => {
-                      setTimezone(timezone.value);
-                      setTimeZone(timezone);
-                      setActiveSelect(!activeSelect);
-                    }}
                     onClick={() => {
                       setTimezone(timezone.value);
                       setTimeZone(timezone);
